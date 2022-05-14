@@ -1,0 +1,9 @@
+#minha-foto {
+  border-radius: 100%;
+  display: inline-block;
+}
+
+#sobre-mim {
+  display: inline-block;
+  width: 55%;
+}
