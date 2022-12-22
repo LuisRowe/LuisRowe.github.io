@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.bbcfe390.css",
+    "main.js": "/static/js/main.d7c5cd4d.js",
+    "static/js/787.be55e6d0.chunk.js": "/static/js/787.be55e6d0.chunk.js",
+    "static/media/fotoatual.jpeg": "/static/media/fotoatual.495e231a52ba77c07c95.jpeg",
+    "index.html": "/index.html",
+    "main.bbcfe390.css.map": "/static/css/main.bbcfe390.css.map",
+    "main.d7c5cd4d.js.map": "/static/js/main.d7c5cd4d.js.map",
+    "787.be55e6d0.chunk.js.map": "/static/js/787.be55e6d0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bbcfe390.css",
+    "static/js/main.d7c5cd4d.js"
+  ]
+}
