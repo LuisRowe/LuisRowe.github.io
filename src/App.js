@@ -1,76 +1,21 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import foto from './img/fotoatual.jpeg';
+import ContentHome from './components/MainContent';
+import Header from './components/Header';
+import ProjectsContent from './components/ProjectsContent';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1 id="nomeCompleto">LUIS FELIPE APOLONIO ROWE</h1>
-
-      </header>
-
-      <main>
-        <img id="minha-foto" src={ foto } alt="Foto atual de Luis Rowe" width="200px" />
-
-        <section id="sobre-mim">
-
-          <h2>Sobre mim:</h2>
-
-          <p>
-            Nascido em 01/12/1992 no noroeste do Paraná surge a pessoa que vos fala,
-            ou vos digita, atualmente morando em
-            {' '}
-            <em>Icaraíma no Paraná</em>
-            , uma
-            {' '}
-            <strong> grande </strong>
-            {' '}
-            pequena cidade. Formado em Administração e em Matemática, estou me empenhando
-            na área da tecnologia e através do curso de Desenvolvimento Web da
-            {' '}
-            <strong>Trybe</strong>
-            {' '}
-            busco adquirir Hard skills, assim como aprimorar minhas Soft skills,
-            para adentrar nesse incrível mercado de trabalho.
-          </p>
-        </section>
-
-        <h2 id="habilidades">Lista de habilidades:</h2>
-
-        <ul>
-          <li>Pensamento analítico.</li>
-          <li><strong>Comunicação</strong></li>
-          <li>BASH</li>
-          <li>GIT</li>
-          <li>HTML</li>
-        </ul>
-
-        <p>
-          Se clicar
-          {' '}
-          <a href="#minhaFoto">AQUI</a>
-          {' '}
-          vai voltar para minha foto.
-        </p>
-
-        <p id="blog">
-          Para ficar sabendo das atualizações no mundo da tecnologia,
-          empreendedorismo e soft skills acesse o
-          {' '}
-          <a href="https://blog.betrybe.com/" target="blanck">blog da Trybe</a>
-          {' '}
-          e assine a Newsletter para não perder nada.
-        </p>
-      </main>
-      <h3>Quer ver novamente algum item? Clique no mesmo no índice abaixo:</h3>
-
-      <ul>
-        <li><a href="#nomeCompleto">Nome completo</a></li>
-        <li><a href="#minhaFoto">Foto</a></li>
-        <li><a href="#sobreMim">Sobre mim</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#blog">Blog</a></li>
-      </ul>
+      <Header />
+      <div className="content">
+        <Routes>
+          <Route exact path="/" element={ <ContentHome /> } />
+          <Route exact path="/projects" element={ <ProjectsContent /> } />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
 }
