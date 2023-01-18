@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
 import Logo from '../img/LogoHeader.png';
 
-function Header() {
+function Header({ changeTheme }) {
   return (
     <nav className="Header">
       <ul>
@@ -14,11 +15,15 @@ function Header() {
         <i
           className="fa-solid fa-circle-half-stroke fa-2x"
           role="presentation"
-          onClick={ () => alert('O dark-mode ainda não foi implementado. Desculpa.') }
+          onClick={ changeTheme }
         />
       </ul>
     </nav>
   );
 }
+
+Header.propTypes = {
+  changeTheme: PropTypes.func.isRequired,
+};
 
 export default Header;
