@@ -23,8 +23,13 @@
   margin: 0;
   padding: 0;
   font-size: 30px;
+  color: white;
   border-left: 2px white;
   border-right: 2px white;
+}
+
+.Header li a {
+  color: white;
 }
 
 .Header a:visited {
@@ -81,4 +86,19 @@ footer ul {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
+}
+
+.fa-2x {
+  color: white;
+  }
+
+.email-copy:hover {
+  cursor: pointer;
+}
+
+.copied {
+  position: static;
+  left: 300px;
+  top: 300px;
+  border: 1px, solid, black;
 }
